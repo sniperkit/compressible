@@ -5,7 +5,7 @@ import (
 	"mime"
 	"regexp"
 
-	"github.com/GitbookIO/mimedb"
+	mimedb "github.com/sniperkit/mimedb"
 )
 
 // Version is Gear's version
@@ -14,7 +14,7 @@ const Version = "1.0.1"
 var compressibleTypeRegExp = regexp.MustCompile(`(?i)^text\/|\+json$|\+text$|\+xml$`)
 
 // Is checks the response Content-Type to determine whether to compress.
-// Using mime database https://github.com/GitbookIO/mimedb to find
+// Using mime database https://github.com/sniperkit/mimedb to find
 // which Content-Type is compressible. All types that not in mimedb but
 // have the scheme of "text/*", "*/*+json", "*/*+text", "*/*+xml" are
 // considered as compressible.
@@ -49,7 +49,7 @@ func Is(contentType string) bool {
 type WithThreshold int
 
 // Compressible checks the response Content-Type to determine whether to
-// compress. Using mime database https://github.com/GitbookIO/mimedb to find
+// compress. Using mime database https://github.com/sniperkit/mimedb to find
 // which Content-Type is compressible and WithThreshold as content length
 // transhold All types that not in mimedb but have the scheme of "text/*",
 // "*/*+json", "*/*+text", "*/*+xml" are considered as compressible.
@@ -62,7 +62,7 @@ func (wt WithThreshold) Compressible(contentType string, contentLength int) bool
 }
 
 // Load loads all extensions and their content types of
-// https://github.com/GitbookIO/mimedb to offical "mime" package.
+// https://github.com/sniperkit/mimedb to offical "mime" package.
 // Recommond to apply this function in your main package's init function.
 func Load() error {
 	for ext, mimeEntry := range mimedb.DB {

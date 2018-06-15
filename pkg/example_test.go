@@ -3,9 +3,12 @@ package compressible_test
 import (
 	"fmt"
 
-	"github.com/teambition/compressible-go"
+	// external
 	"github.com/teambition/gear"
 	"github.com/teambition/gear/middleware/static"
+
+	// internal
+	compressible "github.com/sniperkit/compressible/pkg"
 )
 
 func Example() {

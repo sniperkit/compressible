@@ -3,8 +3,11 @@ package compressible
 import (
 	"testing"
 
-	"github.com/GitbookIO/mimedb"
+	// external
 	"github.com/stretchr/testify/assert"
+
+	// internal
+	mimedb "github.com/sniperkit/mimedb"
 )
 
 func TestDefaultCompressible(t *testing.T) {
