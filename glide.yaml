@@ -1,0 +1,12 @@
+package: github.com/sniperkit/compressible
+import:
+- package: github.com/sniperkit/mimedb
+  subpackages:
+  - pkg
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
+- package: github.com/teambition/gear
+  subpackages:
+  - middleware/static

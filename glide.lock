@@ -1,0 +1,30 @@
+hash: 247a969eae55d970d2675fbb88d9d3bf421d98587c3574a403e99e2ac19f1078
+updated: 2018-06-15T15:10:53.920444969+02:00
+imports:
+- name: github.com/sniperkit/mimedb
+  version: ed7f868ddce727268bade2d82d3ae0520f8e3c1d
+  subpackages:
+  - pkg
+testImports:
+- name: github.com/davecgh/go-spew
+  version: 6d212800a42e8ab5c146b8ace3490ee17e5225f9
+  subpackages:
+  - spew
+- name: github.com/go-http-utils/cookie
+  version: 5e5f3b789d36cf7b2814091f3fd34edac0645e1e
+- name: github.com/go-http-utils/negotiator
+  version: dba3794a997e423e032796131331cce008c3a427
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
+  subpackages:
+  - assert
+- name: github.com/teambition/gear
+  version: a9292ac9d48a1cf31172ca03a5a086c39c3bb340
+  subpackages:
+  - middleware/static
+- name: github.com/teambition/trie-mux
+  version: 9114f6d4d26197b72557ef7e3ca195714919a3ff

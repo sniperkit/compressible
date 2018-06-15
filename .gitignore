@@ -27,3 +27,26 @@ _testmain.go
 
 .env 
 .secret
+
+example/example
+
+examples/example
+cmd/gen-mimedb/gen-mimedb
+
+bin
+bin/
+bin/*
+bin/**
+
+dist
+dist/
+dist/*
+dist/**
+
+vendor
+vendor/
+vendor/*
+vendor/**
+
+.secret*
+.env

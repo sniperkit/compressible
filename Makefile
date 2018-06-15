@@ -1,6 +1,9 @@
 build:
 	@go build -v ./pkg/*.go
 
+example:
+	@go run example/main.go
+
 install:
 	@go install ./pkg/*.go
 
