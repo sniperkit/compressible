@@ -1,8 +1,8 @@
 hash: 247a969eae55d970d2675fbb88d9d3bf421d98587c3574a403e99e2ac19f1078
-updated: 2018-06-15T15:10:53.920444969+02:00
+updated: 2018-06-15T15:24:03.080003473+02:00
 imports:
 - name: github.com/sniperkit/mimedb
-  version: ed7f868ddce727268bade2d82d3ae0520f8e3c1d
+  version: 21fbbf247243aa093fd5e3db834cbacdd8a95711
   subpackages:
   - pkg
 testImports:

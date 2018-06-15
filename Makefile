@@ -1,8 +1,14 @@
 build:
 	@go build -v ./pkg/*.go
 
-example:
-	@go run example/main.go
+example: example-build example-run
+
+example-build:
+	@go build -o bin/example-mimedb example/main.go
+	@./bin/example-mimedb
+
+example-run:
+	@go run -race example/main.go
 
 install:
 	@go install ./pkg/*.go
