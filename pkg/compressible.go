@@ -5,7 +5,7 @@ import (
 	"mime"
 	"regexp"
 
-	mimedb "github.com/sniperkit/mimedb"
+	mimedb "github.com/sniperkit/mimedb/pkg"
 )
 
 // Version is Gear's version
